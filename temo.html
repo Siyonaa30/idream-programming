@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>temo site</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <style>
+/* navigation */
+.navigation{
+    margin-top: -15px;
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw 8vw;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.15);
+}
+#img1{
+    width: 130px;
+    height: 50px;
+    cursor: pointer;
+}
+ul{
+     display: flex;
+}
+li{
+     list-style: none;
+     margin-left: 40px;
+}
+.rest{
+    text-decoration: none;
+    font-size:16px ;
+    font-weight: 500;
+    transition: 0.3s ease;
+    color: black;
+}
+.active{
+    text-decoration: none;
+    font-size:16px ;
+    font-weight: 500;
+    transition: 0.3s ease;
+    color: blue;
+}
+.active:hover{
+    color: black;
+}
+.rest:hover{
+    color: blue;
+}
+.green{
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: white;
+    background-color: #00a79d;
+    text-decoration: none;
+    border-radius: 8px;
+    height: 40px;
+}
+.green:hover{
+    background-color: blue;
+}
+
+/* homepage */
+#home{
+            display: flex;
+            justify-content: center;
+            background-color: rgb(244, 238, 238);
+        }
+        #img2{
+            height: 690px;
+        }
+        #content{
+            padding: 20px;
+            margin-top: 330px;
+        }
+        #homep1{
+            background-color: #00a79d;
+            color: white;
+            border-radius: 10px;
+            font-size: 13px;
+            width: 325px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+        }
+        input{
+            width: 300px;
+            height: 15px;
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 5px;
+            background-color:#f9fafb;
+            margin-bottom: 0px;            
+            }
+         #btn{
+            color: white;
+            background-color: rgb(57, 57, 231);
+            border-radius: 7px;
+            padding: 13px;
+            width: 130px;
+            border: 1px solid;
+        }
+        #btn:hover{
+            background-color: #00a79d;
+            transition: 0.3s ease;
+        }
+       /* section 2 */
+
+        #boxes{
+            display: flex;
+            justify-content: center;
+            align-items: space-between;
+        }
+        #box{
+            border: 1px solid rgb(222, 219, 219);
+            background-color: white;
+            margin-right: 20px;
+        }
+        #sec2p{
+            margin-bottom: 80px;
+        }
+        #boxp{
+            padding: 15px;
+            margin: 15px;
+        }
+        /* section 3 */
+        #sec3box{
+            border: 1px solid white;
+            background-color: white;
+            margin-right: 20px;
+        }
+        #img-hover:hover{
+            cursor: pointer;
+            width: 400px;
+            height: 300px;
+            transition: 00.3s ease;
+        }
+        /* sect4 */
+        #h_3{
+            margin-left: 30px;
+        }
+        #sec4boxes{
+            width: 100%;
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+            grid-gap: 1px;
+            justify-content: center;
+            align-items: space-between;
+            margin-left: 220px;
+            
+        }
+    
+        #sec4box:hover{
+            border: 1px dashed blue;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- navigation -->
+    <div class="navigation">
+        <img id="img1" src="Images/temo.PNG" alt="">
+<ul>
+    <li><a class="rest" href="#">home</a> </li>
+    <li><a class="rest" href="#">buy</a> </li>
+    <li><a class="rest" href="#">sell</a> </li>
+    <li><a class="rest" href="#">listinings</a> </li>
+    <li><a class="rest" href="#">support</a> </li> 
+    <li><a class="rest" href="#">blog</a> </li> 
+    <li><a class="active" href="#"><i class="fa-solid fa-arrow-right-to-bracket"></i>login</a> </li> 
+    <li><a class="green" href="#">Register</a></li>
+    <li>
+        <label>English</label>
+        <select name="languages">
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>     
+        </select>
+    </li>
+
+</ul>
+    </div>
+    <!-- homepage-->
+    <div id="home">
+        <div id="content">
+        <p id="homep1">First order and you will get up to $10 in free BTC as a reward</p>
+        <h1>
+            A Trusted and Secure <br>
+            Cryptocurrency Exchange
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br>
+             incididunt ut labore et dolore magna aliqua consectetur adipiscing elit.
+        </p>
+        <input type="email" name="email" placeholder="Enter Your email or phone" required>
+        <button id="btn"> Get started ></button>
+    </div>
+    <div>
+        <img id="img2" src="images/banner.png" >
+    </div>
+    </div>
+    <!-- section 2 -->
+    <div id="div2" >
+        <DIv id="TEXT">
+            <center>
+            <h1>The Global Leader of Social Trading</h1>
+            <p id="sec2p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et <br> dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </center>
+        </DIv>
+        <DIv id="boxes">
+            <div id="box">
+                <img src="images/b.png" alt="">
+                <h3 id="h_3">Start Instantly</h3>
+                <p id="boxp">Lorem ipsum dolor sit amet, consectetur adipicing elit, <br> sed do eiusmod tempor incididunt ut labore et doee <br> magna aliqua. Ut enim ad minim veniam.</p>
+            
+            </div>
+            <div id="box">
+                <img src="images/tel.PNG" alt="">
+                <h3 id="h_3">Easy to Use</h3>
+                <p id="boxp">Lorem ipsum dolor sit amet, consectetur adipicing elit, <br> sed do eiusmod tempor incididunt ut labore et doee <br> magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
+            <div id="box">
+                <img src="images/bb.PNG" alt="">
+                     <h3 id="h_3">Secure and Regulated</h3>
+                <p id="boxp">Lorem ipsum dolor sit amet, consectetur adipicing elit, <br> sed do eiusmod tempor incididunt ut labore et doee <br> magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
+        </DIv>
+    </div>
+    <!-- section 3 -->
+    <div id="div3" >
+        <DIv id="txt">
+            <center>
+            <h1>Our Features</h1>
+            <p id="sec2p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et <br> dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </center>
+        </DIv>
+        <DIv id="boxes">
+            <div id="sec3box">
+                <img id="img-hover" src="images/nin.PNG" alt="">
+                <h3 id="h_3">Security First</h3>
+                <p id="boxp">Lorem ipsum dolor sit amet, consectetur adipicing elit, <br> sed do eiusmod tempor incididunt ut labore et doee <br> magna aliqua. Ut enim ad minim veniam.</p>
+            
+            </div>
+            <div id="sec3box">
+                <img id="img-hover" src="images/nag.PNG" alt="">
+               <h3 id="h_3">Fast Withdrawals</h3>
+                <p id="boxp">Lorem ipsum dolor sit amet, consectetur adipicing elit, <br> sed do eiusmod tempor incididunt ut labore et doee <br> magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
+            <div id="sec3box">
+                <img id="img-hover" src="images/nag daqad.PNG" alt="">
+                <h3 id="h_3">24/7 Support</h3>
+                <p id="boxp">Lorem ipsum dolor sit amet, consectetur adipicing elit, <br> sed do eiusmod tempor incididunt ut labore et doee <br> magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
+        </DIv>
+    </div>
+     <!-- section 4 -->
+     <div id="div4" >
+        <DIv id="txt">
+            <center>
+            <h1>How to Buy and Sell Cryptocurrency</h1>
+            <p id="sec2p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et <br> dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </center>
+        </DIv>
+        <DIv id="sec4boxes">
+            <div id="sec4box">
+                <img id="imghover" src="images/img1.PNG" alt="">
+                <h3 id="h_3">Bank Transfers</h3>
+                <p id="boxp">Lorem ipsum dolor sit amet, consectetur adipicing elit, <br> sed do eiusmod tempor incididunt ut labore et doee <br> magna aliqua. Ut enim ad minim veniam.</p>
+            
+            </div>
+            <div id="sec4box">
+                <img id="imghover" src="images/img2.PNG" alt="">
+               <h3 id="h_3">Online Wallets</h3>
+                <p id="boxp">Lorem ipsum dolor sit amet, consectetur adipicing elit, <br> sed do eiusmod tempor incididunt ut labore et doee <br> magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
+            <div id="sec4box">
+                <img id="imghover" src="images/img3.PNG" alt="">
+                <h3 id="h_3">Cash Payment</h3>
+                <p id="boxp">Lorem ipsum dolor sit amet, consectetur adipicing elit, <br> sed do eiusmod tempor incididunt ut labore et doee <br> magna aliqua. Ut enim ad minim veniam.</p>
+            </div><br><br>
+
+            <div id="sec4box">
+                <img id="imghover" src="images/img4.PNG" alt="">
+                <h3 id="h_3">Debit/Credit Cards</h3>
+                <p id="boxp">Lorem ipsum dolor sit amet, consectetur adipicing elit, <br> sed do eiusmod tempor incididunt ut labore et doee <br> magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
+            <div id="sec4box">
+                <img id="imghover" src="images/img5.PNG" alt="">
+                <h3 id="h_3">Discounted Gift Cards</h3>
+                <p id="boxp">Lorem ipsum dolor sit amet, consectetur adipicing elit, <br> sed do eiusmod tempor incididunt ut labore et doee <br> magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
+            <div id="sec4box">
+                <img id="imghover" src="images/img6.PNG" alt="">
+                <h3 id="h_3">Goods & Services</h3>
+                <p id="boxp">Lorem ipsum dolor sit amet, consectetur adipicing elit, <br> sed do eiusmod tempor incididunt ut labore et doee <br> magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
+        </DIv>
+    </div>
+</body>
+</html>
